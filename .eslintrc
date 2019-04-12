@@ -1,0 +1,27 @@
+{
+  "extends": [
+    "plugin:import/recommended",
+    "airbnb-base",
+    "prettier"
+  ],
+  "env": {
+    "browser": true,
+    "jest": true
+  },
+  "parserOptions": {
+    "ecmaVersion": 2018,
+    "sourceType": "module"
+  },
+  "globals": {
+    "page": false
+  },
+  "rules": {
+    "class-methods-use-this": [
+      "error",
+      {
+        "exceptMethods": [ "render" ]
+      }
+    ],
+    "import/extensions": "off"
+  }
+}
